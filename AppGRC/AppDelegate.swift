@@ -13,10 +13,27 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var colorIconos:UIColor = UIColor(red: 43/255, green: 120/255, blue: 65/255, alpha: 1)
+    var colorFondo:UIColor = UIColor(red: 242/255, green: 246/255, blue: 247/255, alpha: 1)
+    
+    
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let navigationBarAppearace = UINavigationBar.appearance()
+        navigationBarAppearace.tintColor = UIColor.whiteColor()
+        navigationBarAppearace.barTintColor = colorIconos
+        navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
+        
+        //UIApplication.sharedApplication().statusBarStyle =
+        
+        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
+        
+        window?.backgroundColor = colorFondo
+        
         return true
     }
 
