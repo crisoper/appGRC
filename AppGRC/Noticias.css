@@ -1,0 +1,27 @@
+body {
+    color: #345354;
+}
+
+h1, h2, h3 {
+    color: #345354;
+}
+
+.title {
+    text-align: center;
+}
+
+
+img {
+    width: 100% !important;
+    height: auto;
+}
+
+p.fecha {
+    text-align: right;
+    font-size: 90%
+    color:#f4f4f4;
+}
+
+div.descripcion {
+    text-align: justify !important;
+}

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>10</key>
+	<dict>
+		<key>texto</key>
+		<string>Boletas</string>
+		<key>imagen</key>
+		<string>boletas</string>
+		<key>login</key>
+		<string>si</string>
+	</dict>
+	<key>9</key>
+	<dict>
+		<key>texto</key>
+		<string>Asistencias</string>
+		<key>imagen</key>
+		<string>asistencias</string>
+		<key>login</key>
+		<string>si</string>
+	</dict>
+	<key>8</key>
+	<dict>
+		<key>texto</key>
+		<string>Correo institucional</string>
+		<key>imagen</key>
+		<string>correo</string>
+		<key>login</key>
+		<string>no</string>
+	</dict>
+	<key>1</key>
+	<dict>
+		<key>texto</key>
+		<string>Agenda</string>
+		<key>login</key>
+		<string>no</string>
+		<key>imagen</key>
+		<string>agenda</string>
+	</dict>
+	<key>2</key>
+	<dict>
+		<key>login</key>
+		<string>no</string>
+		<key>texto</key>
+		<string>Convocatorias</string>
+		<key>imagen</key>
+		<string>convocatorias</string>
+	</dict>
+	<key>3</key>
+	<dict>
+		<key>imagen</key>
+		<string>noticias</string>
+		<key>texto</key>
+		<string>Noticias</string>
+		<key>login</key>
+		<string>no</string>
+	</dict>
+	<key>4</key>
+	<dict>
+		<key>texto</key>
+		<string>Normatividad</string>
+		<key>imagen</key>
+		<string>normatividad</string>
+		<key>login</key>
+		<string>no</string>
+	</dict>
+	<key>5</key>
+	<dict>
+		<key>texto</key>
+		<string>Buscar proyectos</string>
+		<key>imagen</key>
+		<string>proyectos</string>
+		<key>login</key>
+		<string>no</string>
+	</dict>
+	<key>6</key>
+	<dict>
+		<key>texto</key>
+		<string>Directorio</string>
+		<key>imagen</key>
+		<string>directorio</string>
+		<key>login</key>
+		<string>no</string>
+	</dict>
+	<key>7</key>
+	<dict>
+		<key>texto</key>
+		<string>Redes sociales</string>
+		<key>imagen</key>
+		<string>redes</string>
+		<key>login</key>
+		<string>no</string>
+	</dict>
+	<key>0</key>
+	<dict>
+		<key>login</key>
+		<string>no</string>
+		<key>imagen</key>
+		<string>mad</string>
+		<key>texto</key>
+		<string>Trámite documentario</string>
+	</dict>
+</dict>
+</plist>

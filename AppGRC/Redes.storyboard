@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Redes View Controller-->
+        <scene sceneID="JhC-CJ-Me0">
+            <objects>
+                <viewController storyboardIdentifier="RedesVCID" id="xvH-cQ-26a" customClass="RedesViewController" customModule="AppGRC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZUb-1K-Jqu"/>
+                        <viewControllerLayoutGuide type="bottom" id="1jf-f0-n0k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U4o-K8-zEg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Jz5-lJ-G0G">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1Qz-fB-x0y">
+                                    <size key="itemSize" width="140" height="113"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="15" minY="10" maxX="15" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellRedes" id="hi0-tN-J7m" customClass="RedesCollectionViewCell" customModule="AppGRC" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="10" width="140" height="113"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="140" height="113"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ULP-E6-Ura">
+                                                    <rect key="frame" x="34" y="0.0" width="72" height="72"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5m-Hw-gaM">
+                                                    <rect key="frame" x="0.0" y="72" width="140" height="41"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="myImage" destination="ULP-E6-Ura" id="4Zg-fd-wKg"/>
+                                            <outlet property="myLabel" destination="G5m-Hw-gaM" id="dZB-Yf-qKA"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="xvH-cQ-26a" id="M7a-c9-nFG"/>
+                                    <outlet property="delegate" destination="xvH-cQ-26a" id="eXa-ac-jef"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1jf-f0-n0k" firstAttribute="top" secondItem="Jz5-lJ-G0G" secondAttribute="bottom" id="ID0-Qv-BIS"/>
+                            <constraint firstItem="Jz5-lJ-G0G" firstAttribute="top" secondItem="U4o-K8-zEg" secondAttribute="top" id="Xre-gh-4y1"/>
+                            <constraint firstItem="Jz5-lJ-G0G" firstAttribute="leading" secondItem="U4o-K8-zEg" secondAttribute="leading" id="cuj-LA-axL"/>
+                            <constraint firstAttribute="trailing" secondItem="Jz5-lJ-G0G" secondAttribute="trailing" id="gDH-GC-eKN"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yjE-PG-4af" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="263.5" y="190.5"/>
+        </scene>
+    </scenes>
+</document>

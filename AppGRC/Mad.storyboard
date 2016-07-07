@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Mad View Controller-->
+        <scene sceneID="TFN-d1-Zbn">
+            <objects>
+                <viewController storyboardIdentifier="MadVCID" id="nTx-ek-9Lg" customClass="MadViewController" customModule="AppGRC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PRt-ed-y1C"/>
+                        <viewControllerLayoutGuide type="bottom" id="1fa-kU-6UX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h6G-Aq-e17">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEf-1N-y19">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CIX-gU-155">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Para hacer seguimiento de su expediente, debe digitar el número MAD." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rnf-cO-8lX">
+                                                <rect key="frame" x="47" y="30" width="280" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="280" id="Zkw-z4-cTj"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="xko-qa-ac0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Expediente MAD" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ro-8K-a0g">
+                                                <rect key="frame" x="47" y="59" width="280" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="280" id="Taa-kT-yh1"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Rnf-cO-8lX" firstAttribute="centerX" secondItem="CIX-gU-155" secondAttribute="centerX" id="DfT-dc-4I4"/>
+                                            <constraint firstItem="6ro-8K-a0g" firstAttribute="top" secondItem="Rnf-cO-8lX" secondAttribute="bottom" constant="8" id="L0w-lo-mYM"/>
+                                            <constraint firstItem="6ro-8K-a0g" firstAttribute="centerX" secondItem="CIX-gU-155" secondAttribute="centerX" id="oYE-J2-MvL"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="CIX-gU-155" secondAttribute="trailing" id="D1T-Rq-EZR"/>
+                                    <constraint firstItem="CIX-gU-155" firstAttribute="leading" secondItem="OEf-1N-y19" secondAttribute="leading" id="JXq-Gx-Ioa"/>
+                                    <constraint firstItem="CIX-gU-155" firstAttribute="top" secondItem="OEf-1N-y19" secondAttribute="top" id="e9w-bw-wEC"/>
+                                    <constraint firstAttribute="bottom" secondItem="CIX-gU-155" secondAttribute="bottom" id="gDd-5e-NiW"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CIX-gU-155" firstAttribute="width" secondItem="h6G-Aq-e17" secondAttribute="width" id="4hA-kD-TfL"/>
+                            <constraint firstItem="OEf-1N-y19" firstAttribute="top" secondItem="h6G-Aq-e17" secondAttribute="top" id="Ci5-IY-ki8"/>
+                            <constraint firstItem="1fa-kU-6UX" firstAttribute="top" secondItem="OEf-1N-y19" secondAttribute="bottom" id="LeA-dM-nJo"/>
+                            <constraint firstAttribute="trailing" secondItem="OEf-1N-y19" secondAttribute="trailing" id="TlH-DN-ZJz"/>
+                            <constraint firstItem="OEf-1N-y19" firstAttribute="leading" secondItem="h6G-Aq-e17" secondAttribute="leading" id="nCe-Uj-DeD"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="myLabel" destination="Rnf-cO-8lX" id="FtL-Hf-UAk"/>
+                        <outlet property="myScrollView" destination="OEf-1N-y19" id="gYZ-7i-8PV"/>
+                        <outlet property="myTextField" destination="6ro-8K-a0g" id="brt-Ds-6Vp"/>
+                        <outlet property="viewFondo" destination="CIX-gU-155" id="4Tb-MR-c3r"/>
+                        <segue destination="b3A-57-ctY" kind="showDetail" identifier="showtabsMad" id="t1N-E2-no1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dXF-DZ-RNe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="389.5" y="328.5"/>
+        </scene>
+        <!--Tabs View Controller-->
+        <scene sceneID="JnB-7A-WgW">
+            <objects>
+                <viewController storyboardIdentifier="SeguimientoMadID" id="b3A-57-ctY" customClass="TabsViewController" customModule="AppGRC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="we2-Z7-zmx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Scu-uQ-oFT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XSw-sq-IKM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LDQ-4U-Khl">
+                                <rect key="frame" x="6" y="26" width="363" height="29"/>
+                                <segments>
+                                    <segment title="Datos"/>
+                                    <segment title="Seguimiento"/>
+                                    <segment title="Relacionado"/>
+                                    <segment title="Adjunto"/>
+                                </segments>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MW0-7n-cde">
+                                <rect key="frame" x="0.0" y="62" width="375" height="605"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="LDQ-4U-Khl" secondAttribute="trailing" constant="6" id="RSw-Ph-xYo"/>
+                            <constraint firstItem="LDQ-4U-Khl" firstAttribute="leading" secondItem="XSw-sq-IKM" secondAttribute="leading" constant="6" id="UTy-8a-DJT"/>
+                            <constraint firstItem="MW0-7n-cde" firstAttribute="leading" secondItem="XSw-sq-IKM" secondAttribute="leading" id="Yn7-wq-UHa"/>
+                            <constraint firstItem="Scu-uQ-oFT" firstAttribute="top" secondItem="MW0-7n-cde" secondAttribute="bottom" id="kAq-V6-ELE"/>
+                            <constraint firstItem="LDQ-4U-Khl" firstAttribute="top" secondItem="we2-Z7-zmx" secondAttribute="bottom" constant="6" id="pPZ-2F-C2o"/>
+                            <constraint firstItem="MW0-7n-cde" firstAttribute="top" secondItem="LDQ-4U-Khl" secondAttribute="bottom" constant="8" id="rFY-Rb-ddP"/>
+                            <constraint firstAttribute="trailing" secondItem="MW0-7n-cde" secondAttribute="trailing" id="xOe-ra-cXU"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yxW-Ja-Bj3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="871.5" y="328.5"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Loadfiles View Controller-->
+        <scene sceneID="qFm-lA-Pg0">
+            <objects>
+                <viewController storyboardIdentifier="LoadfilesVCID" id="p3x-mG-CWU" customClass="LoadfilesViewController" customModule="AppGRC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rKo-Fo-08W"/>
+                        <viewControllerLayoutGuide type="bottom" id="xTu-xd-EPo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cFg-3H-Nvp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zGY-yv-AUX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zGY-yv-AUX" secondAttribute="trailing" id="NbG-lr-xN6"/>
+                            <constraint firstItem="xTu-xd-EPo" firstAttribute="top" secondItem="zGY-yv-AUX" secondAttribute="bottom" id="pUy-ac-TO9"/>
+                            <constraint firstItem="zGY-yv-AUX" firstAttribute="top" secondItem="cFg-3H-Nvp" secondAttribute="top" id="qKM-dO-lh8"/>
+                            <constraint firstItem="zGY-yv-AUX" firstAttribute="leading" secondItem="cFg-3H-Nvp" secondAttribute="leading" id="yVb-h6-2Nz"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="myWebView" destination="zGY-yv-AUX" id="JDc-QJ-RKq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eS4-cy-op0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1121.5" y="364.5"/>
+        </scene>
+    </scenes>
+</document>
