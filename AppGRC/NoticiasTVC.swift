@@ -63,6 +63,7 @@ class NoticiasTVC: UITableViewController, UISearchBarDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    //Mostrar mensaje de cargando
     func mostrarActivity(){
         
         self.tableView.allowsSelection = false
@@ -77,7 +78,7 @@ class NoticiasTVC: UITableViewController, UISearchBarDelegate {
         presentViewController(alert, animated: true, completion: nil)
     }
     
-    //OcultarActivity
+    //Ocultar Mensaje de cargando
     func ocultarActivity() {
         self.alert.dismissViewControllerAnimated(false, completion: nil)
         self.view.endEditing(true)
@@ -174,7 +175,7 @@ class NoticiasTVC: UITableViewController, UISearchBarDelegate {
                     
                     self.ocultarActivity()
                     
-                    print("Error de conexión a internet")
+                    //print("Error de conexión a internet")
                     //Mostramos error al traer data Json
                     self.showMessageAlert((error?.localizedDescription)!)
                 }
@@ -195,7 +196,8 @@ class NoticiasTVC: UITableViewController, UISearchBarDelegate {
                             for item in items {
                                 
                                 self.resultNoticias.append(
-                                    NoticiasClass(  titulo: item.valueForKey("titulo") as! String,
+                                    NoticiasClass(
+                                        titulo: item.valueForKey("titulo") as! String,
                                         descripcion: item.valueForKey("descripcion") as! String,
                                         imagen: item.valueForKey("imagen") as! String,
                                         subtitulo: item.valueForKey("subtitulo") as! String,
@@ -404,7 +406,7 @@ class NoticiasTVC: UITableViewController, UISearchBarDelegate {
                     destination.detalleNoticia["miniatura"] = self.resultNoticias[noticiaIndex].miniatura
                     destination.detalleNoticia["imagen"] = self.resultNoticias[noticiaIndex].imagen
                     
-                    print(resultNoticias[noticiaIndex].archivos)
+                    //print(resultNoticias[noticiaIndex].archivos)
                     
                 }
             }

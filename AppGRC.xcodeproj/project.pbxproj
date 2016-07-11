@@ -55,7 +55,14 @@
 		7EC4C1201D15C13C0025DB0D /* NoticiaClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC4C11F1D15C13C0025DB0D /* NoticiaClass.swift */; };
 		7EC4C1241D15C21D0025DB0D /* NoticiasTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC4C1231D15C21D0025DB0D /* NoticiasTVCell.swift */; };
 		7EC4C1261D15C5DC0025DB0D /* NoticiasImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC4C1251D15C5DC0025DB0D /* NoticiasImageCache.swift */; };
+		7ED2B2A41D319784000CDAC6 /* EmerrgenteMadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED2B2A31D319784000CDAC6 /* EmerrgenteMadVC.swift */; };
+		7ED2B2A61D31EC98000CDAC6 /* ClassDatosMAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED2B2A51D31EC98000CDAC6 /* ClassDatosMAD.swift */; };
 		7ED9B4231D2E8DF8008039DF /* TabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED9B4221D2E8DF8008039DF /* TabsViewController.swift */; };
+		7ED9B4251D2F4E44008039DF /* FirstTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED9B4241D2F4E44008039DF /* FirstTabViewController.swift */; };
+		7ED9B4271D2F4EEA008039DF /* SecondTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED9B4261D2F4EEA008039DF /* SecondTabViewController.swift */; };
+		7ED9B4291D2F544F008039DF /* TabySegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED9B4281D2F544F008039DF /* TabySegmentedControl.swift */; };
+		7EDEEFC41D2FDC7400ADB884 /* ThirdTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDEEFC31D2FDC7400ADB884 /* ThirdTabViewController.swift */; };
+		7EDEEFC61D2FDCA100ADB884 /* FourthTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDEEFC51D2FDCA100ADB884 /* FourthTabViewController.swift */; };
 		7EE91BF01D0BB667007D63B2 /* PerfilUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE91BEF1D0BB667007D63B2 /* PerfilUsuarioViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -110,7 +117,14 @@
 		7EC4C11F1D15C13C0025DB0D /* NoticiaClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticiaClass.swift; sourceTree = "<group>"; };
 		7EC4C1231D15C21D0025DB0D /* NoticiasTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticiasTVCell.swift; sourceTree = "<group>"; };
 		7EC4C1251D15C5DC0025DB0D /* NoticiasImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticiasImageCache.swift; sourceTree = "<group>"; };
+		7ED2B2A31D319784000CDAC6 /* EmerrgenteMadVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmerrgenteMadVC.swift; sourceTree = "<group>"; };
+		7ED2B2A51D31EC98000CDAC6 /* ClassDatosMAD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassDatosMAD.swift; sourceTree = "<group>"; };
 		7ED9B4221D2E8DF8008039DF /* TabsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabsViewController.swift; sourceTree = "<group>"; };
+		7ED9B4241D2F4E44008039DF /* FirstTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTabViewController.swift; sourceTree = "<group>"; };
+		7ED9B4261D2F4EEA008039DF /* SecondTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondTabViewController.swift; sourceTree = "<group>"; };
+		7ED9B4281D2F544F008039DF /* TabySegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabySegmentedControl.swift; sourceTree = "<group>"; };
+		7EDEEFC31D2FDC7400ADB884 /* ThirdTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdTabViewController.swift; sourceTree = "<group>"; };
+		7EDEEFC51D2FDCA100ADB884 /* FourthTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthTabViewController.swift; sourceTree = "<group>"; };
 		7EE91BEF1D0BB667007D63B2 /* PerfilUsuarioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilUsuarioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,6 +191,13 @@
 				7E34E6AF1D0DBB8F005910C8 /* Mad.storyboard */,
 				7ED9B4221D2E8DF8008039DF /* TabsViewController.swift */,
 				7E34E6B11D0DBBC6005910C8 /* MadViewController.swift */,
+				7ED9B4241D2F4E44008039DF /* FirstTabViewController.swift */,
+				7ED9B4261D2F4EEA008039DF /* SecondTabViewController.swift */,
+				7ED9B4281D2F544F008039DF /* TabySegmentedControl.swift */,
+				7EDEEFC31D2FDC7400ADB884 /* ThirdTabViewController.swift */,
+				7EDEEFC51D2FDCA100ADB884 /* FourthTabViewController.swift */,
+				7ED2B2A31D319784000CDAC6 /* EmerrgenteMadVC.swift */,
+				7ED2B2A51D31EC98000CDAC6 /* ClassDatosMAD.swift */,
 			);
 			name = Mad;
 			sourceTree = "<group>";
@@ -392,6 +413,7 @@
 			files = (
 				7E08F10E1D16F31C0053F840 /* NoticiaDetalleVC.swift in Sources */,
 				7E34E6CE1D0DE0CB005910C8 /* NoticiasTVC.swift in Sources */,
+				7ED9B4291D2F544F008039DF /* TabySegmentedControl.swift in Sources */,
 				7E1A54971D0F7B6100DFF36A /* ResolucionesTVC.swift in Sources */,
 				7E1A54931D0F73C600DFF36A /* SectionNormatividad.swift in Sources */,
 				7E1A40AC1D0B070000546B70 /* DataController.swift in Sources */,
@@ -399,6 +421,7 @@
 				7E2004D41D0C633900B7D756 /* AcercadeTableViewController.swift in Sources */,
 				7E34E6B51D0DD8C8005910C8 /* AgendaViewController.swift in Sources */,
 				7E34E6CC1D0DE027005910C8 /* NormatividadTVC.swift in Sources */,
+				7ED2B2A61D31EC98000CDAC6 /* ClassDatosMAD.swift in Sources */,
 				7E34E6B21D0DBBC6005910C8 /* MadViewController.swift in Sources */,
 				7E2004D81D0C77EC00B7D756 /* TerminosUIViewController.swift in Sources */,
 				7E34E6BC1D0DD9B8005910C8 /* ConvocatoriasViewController.swift in Sources */,
@@ -408,14 +431,19 @@
 				7EC4C1201D15C13C0025DB0D /* NoticiaClass.swift in Sources */,
 				7EC4C1261D15C5DC0025DB0D /* NoticiasImageCache.swift in Sources */,
 				7EC4C1241D15C21D0025DB0D /* NoticiasTVCell.swift in Sources */,
+				7ED2B2A41D319784000CDAC6 /* EmerrgenteMadVC.swift in Sources */,
+				7ED9B4271D2F4EEA008039DF /* SecondTabViewController.swift in Sources */,
+				7ED9B4251D2F4E44008039DF /* FirstTabViewController.swift in Sources */,
 				7E9706271D0BC47900771343 /* CorreoViewController.swift in Sources */,
 				7E9C05901D1898E700D8C7BD /* VerificaConexion.swift in Sources */,
 				7E0BF0D81D0CB0C300693D27 /* RedesCollectionViewCell.swift in Sources */,
+				7EDEEFC41D2FDC7400ADB884 /* ThirdTabViewController.swift in Sources */,
 				7E0BF0D61D0CA9EC00693D27 /* RedesViewController.swift in Sources */,
 				7E08F9731D088FAA00552191 /* MainCollectionViewCell.swift in Sources */,
 				7E1A54951D0F742600DFF36A /* SectionNormatividadData.swift in Sources */,
 				7E1FE5841D0E1A540034D11E /* PopupController.swift in Sources */,
 				7E08F9711D088EF000552191 /* MyClassConstants.swift in Sources */,
+				7EDEEFC61D2FDCA100ADB884 /* FourthTabViewController.swift in Sources */,
 				7E2004DA1D0C784300B7D756 /* DessarrolladoresUIVController.swift in Sources */,
 				7EB1CCD01D11B1C700FFA256 /* LoadfilesViewController.swift in Sources */,
 				7ED9B4231D2E8DF8008039DF /* TabsViewController.swift in Sources */,
@@ -543,6 +571,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pe.com.crisoper.AppGRC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -557,6 +586,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pe.com.crisoper.AppGRC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

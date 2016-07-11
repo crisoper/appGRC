@@ -1,7 +1,10 @@
 {
   "images" : [
     {
-      "idiom" : "universal",
+      "idiom" : "universal"
+    },
+    {
+      "idiom" : "iphone",
       "filename" : "izquierda.pdf"
     }
   ],

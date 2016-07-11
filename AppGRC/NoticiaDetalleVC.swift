@@ -10,6 +10,8 @@ import UIKit
 
 class NoticiaDetalleVC: UIViewController {
 
+    let myConstants = MyClassConstants()
+    
     var detalleNoticia = [String:String]()
     
     @IBOutlet weak var myWebView: UIWebView!
@@ -17,6 +19,9 @@ class NoticiaDetalleVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = myConstants.colorFondo2
+        self.myWebView.backgroundColor = myConstants.colorFondo2
         
         
         let localFilePath = NSBundle.mainBundle().pathForResource("Noticias", ofType: "css")

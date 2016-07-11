@@ -86,11 +86,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="8ZD-Lg-Tl3" firstAttribute="width" secondItem="ybm-iV-Tbu" secondAttribute="width" id="2ET-WY-C8I"/>
                             <constraint firstAttribute="trailing" secondItem="8ZD-Lg-Tl3" secondAttribute="trailing" id="2bJ-v8-059"/>
                             <constraint firstItem="8ZD-Lg-Tl3" firstAttribute="top" secondItem="So7-jN-X5M" secondAttribute="bottom" id="5WF-iu-8kT"/>
+                            <constraint firstItem="8ZD-Lg-Tl3" firstAttribute="leading" secondItem="ybm-iV-Tbu" secondAttribute="leading" constant="20" id="6ec-IJ-MJ2"/>
                             <constraint firstItem="mYd-cM-EAb" firstAttribute="width" secondItem="ybm-iV-Tbu" secondAttribute="width" id="BUX-XV-R5C"/>
+                            <constraint firstItem="8ZD-Lg-Tl3" firstAttribute="top" secondItem="ybm-iV-Tbu" secondAttribute="top" id="QY0-SY-44L"/>
+                            <constraint firstAttribute="trailing" secondItem="8ZD-Lg-Tl3" secondAttribute="trailing" constant="20" id="aL1-p4-Jo7"/>
                             <constraint firstItem="EAb-Jl-7zj" firstAttribute="top" secondItem="8ZD-Lg-Tl3" secondAttribute="bottom" id="ev8-gr-QdG"/>
                             <constraint firstItem="8ZD-Lg-Tl3" firstAttribute="leading" secondItem="ybm-iV-Tbu" secondAttribute="leading" id="tO9-TI-VV9"/>
+                            <constraint firstItem="EAb-Jl-7zj" firstAttribute="top" secondItem="8ZD-Lg-Tl3" secondAttribute="bottom" constant="20" id="yAW-p4-9P0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Iniciar sesión" id="RCy-nG-mf7"/>
@@ -180,25 +185,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrB-u0-gmd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1384.5" y="802.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="NWS-C2-sEO">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JTK-mA-cwK" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qNX-hg-LoC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="lfK-t7-Wv1" kind="relationship" relationship="rootViewController" id="V7X-yR-gMU"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DHC-14-ixJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="911.5" y="9.5"/>
         </scene>
     </scenes>
 </document>
