@@ -17,6 +17,8 @@ class SecondTabViewController: UIViewController, NSXMLParserDelegate, UITableVie
     //Outlets
     @IBOutlet weak var tableSEguimiento: UITableView!
     
+    //Tipos de operaciones
+    var tipoOperaciones: [String] = ["", "RECEPCIONADO", "DERIVADO", "ARCHIVADO", "ADJUNTO"]
 
     //Variables para parsear XML
     var parser = NSXMLParser()
@@ -43,17 +45,20 @@ class SecondTabViewController: UIViewController, NSXMLParserDelegate, UITableVie
     var oficinadestinosiglas = NSMutableString()
     var usuariodestino = NSMutableString()
     var usuariodestinofull = NSMutableString()
-    var destinoproveido = NSMutableString()
+    var destinoproveido =  NSMutableString()
     var tipooperacion = NSMutableString()
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = myConstants.colorFondo2
+        self.tableSEguimiento.backgroundColor = myConstants.colorFondo2
+        
+        self.tableSEguimiento.estimatedRowHeight = 220.0
+        self.tableSEguimiento.rowHeight = UITableViewAutomaticDimension
+        
         self.tableSEguimiento.delegate = self
-        
-        //print(ClassDatosMAD.sharedDatosMAD.seguimiento)
-        
         self.beginParsing(ClassDatosMAD.sharedDatosMAD.seguimiento.dataUsingEncoding(NSUTF8StringEncoding)!)
 
         // Do any additional setup after loading the view.
@@ -66,12 +71,12 @@ class SecondTabViewController: UIViewController, NSXMLParserDelegate, UITableVie
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        print("Second VC will appear")
+        //print("Second VC will appear")
     }
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
-        print("Second VC will disappear")
+        //print("Second VC will disappear")
     }
     
     
@@ -81,14 +86,45 @@ class SecondTabViewController: UIViewController, NSXMLParserDelegate, UITableVie
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        let cell:ExpandableUTVCell = tableView.dequeueReusableCellWithIdentifier("celdaSeg", forIndexPath: indexPath) as! ExpandableUTVCell
         
         //cell.textLabel?.text = sections[indexPath.section].items[indexPath.row]
         cell.backgroundColor = myConstants.colorFondo2
         
+        //Desabilitar seleccion de la fila
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
+        
+        cell.lblFecha.text = self.posts.objectAtIndex(indexPath.row).valueForKey("fecha") as! NSString as String
+        cell.lblFecha.backgroundColor = myConstants.colorFondo2
+        cell.lblExpediente.backgroundColor = myConstants.colorFondo2
+        
+        
+        switch self.posts.objectAtIndex(indexPath.row).valueForKey("tipooperacion") as! NSString as String {
+        case "1":
+            cell.lblExpediente.text = "\(self.posts.count - indexPath.row) - RECEPCIONADO"
+
+        case "2":
+            cell.lblExpediente.text = "\(self.posts.count - indexPath.row) - DERIVADO"
+            
+        case "3":
+            cell.lblExpediente.text = "\(self.posts.count - indexPath.row) - ARCHIVADO"
+            
+        case "4":
+            cell.lblExpediente.text = "\(self.posts.count - indexPath.row) - ADJUNTO"
+            
+        default:
+            cell.lblExpediente.text = ""
+        }
+        
+        
+        cell.tapActionA = { (cell) in
+            print(indexPath.row)
+        }
+        
+        
         //cell.textLabel?.font = UIFont(name: "Arial", size: 15)
         
-        cell.textLabel?.text = posts.objectAtIndex(indexPath.row).valueForKey("fecha") as! NSString as String
+        //cell.textLabel?.text = self.posts.objectAtIndex(indexPath.row).valueForKey("fecha") as! NSString as String
         
         return cell
     }
@@ -102,7 +138,7 @@ class SecondTabViewController: UIViewController, NSXMLParserDelegate, UITableVie
         self.parser.delegate = self
         self.parser.parse()
         
-        print(posts.count)
+        //print(posts.count)
         
         self.tableSEguimiento.reloadData()
         

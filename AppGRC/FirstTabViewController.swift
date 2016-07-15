@@ -10,6 +10,9 @@ import UIKit
 
 class FirstTabViewController: UIViewController, UIPopoverPresentationControllerDelegate, NSXMLParserDelegate {
     
+    //Colores globales
+    let myConstants = MyClassConstants()
+    
     //Outlets
     @IBOutlet weak var btnDetail: UIButton!
     @IBOutlet weak var lblExpediente: UILabel!
@@ -44,6 +47,9 @@ class FirstTabViewController: UIViewController, UIPopoverPresentationControllerD
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = myConstants.colorFondo2
+        
+        self.btnDetail.tintColor = myConstants.colorIconos
         // Do any additional setup after loading the view.
     }
     
@@ -87,7 +93,7 @@ class FirstTabViewController: UIViewController, UIPopoverPresentationControllerD
 //        popover!.sourceView = self.view
         //popover!.sourceRect = CGRectMake(100,100,0,0)
         
-        self.presentViewController(nav, animated: true, completion: nil)
+        self.presentViewController(nav, animated: false, completion: nil)
         
 //        let storyboard:UIStoryboard = UIStoryboard(name: "Mad", bundle: nil)
 //        let controlador:EmerrgenteMadVC  = storyboard.instantiateViewControllerWithIdentifier("EmerrgenteMadVCID") as! EmerrgenteMadVC
@@ -136,7 +142,7 @@ class FirstTabViewController: UIViewController, UIPopoverPresentationControllerD
             self.lblExpediente.text = "EXPEDIENTE N° \(aatext!)"
             self.lblTitulo.text = post.objectForKey("documento") as? String
             
-            if let treferencia = post.objectForKey("referencia") as? String where treferencia != ""  {
+            if let treferencia = post.objectForKey("referencia") as? String where (treferencia != "" &&  treferencia != "0" )  {
                 self.lblReferencia.text = treferencia
             }
             else {

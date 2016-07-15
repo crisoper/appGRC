@@ -45,12 +45,16 @@
 		7E44453F1D0765F700A0CDAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E44453D1D0765F700A0CDAF /* LaunchScreen.storyboard */; };
 		7E6357B31D0E306B00B2584D /* Loading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6357B21D0E306B00B2584D /* Loading.storyboard */; };
 		7E6357B51D0E30F900B2584D /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6357B41D0E30F900B2584D /* LoadingViewController.swift */; };
+		7E9193171D397EDB0053FC1A /* cellSeguimiento.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E9193161D397EDB0053FC1A /* cellSeguimiento.xib */; };
 		7E9706221D0BC3D000771343 /* Redes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E9706211D0BC3D000771343 /* Redes.storyboard */; };
 		7E9706251D0BC3E300771343 /* Correo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E9706241D0BC3E300771343 /* Correo.storyboard */; };
 		7E9706271D0BC47900771343 /* CorreoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9706261D0BC47900771343 /* CorreoViewController.swift */; };
 		7E9C05901D1898E700D8C7BD /* VerificaConexion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9C058F1D1898E700D8C7BD /* VerificaConexion.swift */; };
 		7EB1CCCE1D11B15100FFA256 /* Loadfiles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB1CCCD1D11B15100FFA256 /* Loadfiles.storyboard */; };
 		7EB1CCD01D11B1C700FFA256 /* LoadfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB1CCCF1D11B1C700FFA256 /* LoadfilesViewController.swift */; };
+		7EB38DDA1D352FBD00990E98 /* SeguimientoUTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB38DD91D352FBD00990E98 /* SeguimientoUTVCell.swift */; };
+		7EB38DDC1D357E5C00990E98 /* AdjuntoUTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB38DDB1D357E5C00990E98 /* AdjuntoUTVCell.swift */; };
+		7EB38DDE1D35AD4700990E98 /* ExpandableUTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB38DDD1D35AD4700990E98 /* ExpandableUTVCell.swift */; };
 		7EC4C11E1D15BB080025DB0D /* Noticias.css in Resources */ = {isa = PBXBuildFile; fileRef = 7EC4C11D1D15BB080025DB0D /* Noticias.css */; };
 		7EC4C1201D15C13C0025DB0D /* NoticiaClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC4C11F1D15C13C0025DB0D /* NoticiaClass.swift */; };
 		7EC4C1241D15C21D0025DB0D /* NoticiasTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC4C1231D15C21D0025DB0D /* NoticiasTVCell.swift */; };
@@ -107,12 +111,16 @@
 		7E4445401D0765F700A0CDAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E6357B21D0E306B00B2584D /* Loading.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Loading.storyboard; sourceTree = "<group>"; };
 		7E6357B41D0E30F900B2584D /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		7E9193161D397EDB0053FC1A /* cellSeguimiento.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellSeguimiento.xib; sourceTree = "<group>"; };
 		7E9706211D0BC3D000771343 /* Redes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Redes.storyboard; sourceTree = "<group>"; };
 		7E9706241D0BC3E300771343 /* Correo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Correo.storyboard; sourceTree = "<group>"; };
 		7E9706261D0BC47900771343 /* CorreoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorreoViewController.swift; sourceTree = "<group>"; };
 		7E9C058F1D1898E700D8C7BD /* VerificaConexion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificaConexion.swift; sourceTree = "<group>"; };
 		7EB1CCCD1D11B15100FFA256 /* Loadfiles.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Loadfiles.storyboard; sourceTree = "<group>"; };
 		7EB1CCCF1D11B1C700FFA256 /* LoadfilesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadfilesViewController.swift; sourceTree = "<group>"; };
+		7EB38DD91D352FBD00990E98 /* SeguimientoUTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeguimientoUTVCell.swift; sourceTree = "<group>"; };
+		7EB38DDB1D357E5C00990E98 /* AdjuntoUTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdjuntoUTVCell.swift; sourceTree = "<group>"; };
+		7EB38DDD1D35AD4700990E98 /* ExpandableUTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableUTVCell.swift; sourceTree = "<group>"; };
 		7EC4C11D1D15BB080025DB0D /* Noticias.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = Noticias.css; sourceTree = "<group>"; };
 		7EC4C11F1D15C13C0025DB0D /* NoticiaClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticiaClass.swift; sourceTree = "<group>"; };
 		7EC4C1231D15C21D0025DB0D /* NoticiasTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticiasTVCell.swift; sourceTree = "<group>"; };
@@ -198,6 +206,10 @@
 				7EDEEFC51D2FDCA100ADB884 /* FourthTabViewController.swift */,
 				7ED2B2A31D319784000CDAC6 /* EmerrgenteMadVC.swift */,
 				7ED2B2A51D31EC98000CDAC6 /* ClassDatosMAD.swift */,
+				7EB38DD91D352FBD00990E98 /* SeguimientoUTVCell.swift */,
+				7EB38DDB1D357E5C00990E98 /* AdjuntoUTVCell.swift */,
+				7EB38DDD1D35AD4700990E98 /* ExpandableUTVCell.swift */,
+				7E9193161D397EDB0053FC1A /* cellSeguimiento.xib */,
 			);
 			name = Mad;
 			sourceTree = "<group>";
@@ -384,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E34E6C11D0DDA75005910C8 /* Noticias.storyboard in Resources */,
+				7E9193171D397EDB0053FC1A /* cellSeguimiento.xib in Resources */,
 				7E34E6B71D0DD8DD005910C8 /* Agenda.storyboard in Resources */,
 				7E44453F1D0765F700A0CDAF /* LaunchScreen.storyboard in Resources */,
 				7EB1CCCE1D11B15100FFA256 /* Loadfiles.storyboard in Resources */,
@@ -414,8 +427,11 @@
 				7E08F10E1D16F31C0053F840 /* NoticiaDetalleVC.swift in Sources */,
 				7E34E6CE1D0DE0CB005910C8 /* NoticiasTVC.swift in Sources */,
 				7ED9B4291D2F544F008039DF /* TabySegmentedControl.swift in Sources */,
+				7EB38DDA1D352FBD00990E98 /* SeguimientoUTVCell.swift in Sources */,
 				7E1A54971D0F7B6100DFF36A /* ResolucionesTVC.swift in Sources */,
 				7E1A54931D0F73C600DFF36A /* SectionNormatividad.swift in Sources */,
+				7EB38DDC1D357E5C00990E98 /* AdjuntoUTVCell.swift in Sources */,
+				7EB38DDE1D35AD4700990E98 /* ExpandableUTVCell.swift in Sources */,
 				7E1A40AC1D0B070000546B70 /* DataController.swift in Sources */,
 				7E2004D61D0C651300B7D756 /* AcecadeTableViewCell.swift in Sources */,
 				7E2004D41D0C633900B7D756 /* AcercadeTableViewController.swift in Sources */,

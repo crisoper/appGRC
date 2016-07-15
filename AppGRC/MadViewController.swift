@@ -254,9 +254,14 @@ class MadViewController: UIViewController, UITextFieldDelegate, NSXMLParserDeleg
                                                             ClassDatosMAD.sharedDatosMAD.seguimiento = strSeguimieto as String
                                                         }
                                                         if let strAdjunto = NSString(data: dataAdjunto!, encoding: NSUTF8StringEncoding) {
+                                                            
+                                                            //print(strAdjunto)
                                                             ClassDatosMAD.sharedDatosMAD.adjunto = strAdjunto as String
                                                         }
                                                         if let strRelacionado = NSString(data: dataRelacionado!, encoding: NSUTF8StringEncoding) {
+                                                            
+                                                            //print(strRelacionado)
+                                                            
                                                             ClassDatosMAD.sharedDatosMAD.relacionado = strRelacionado as String
                                                         }
                                                         
@@ -369,8 +374,13 @@ class MadViewController: UIViewController, UITextFieldDelegate, NSXMLParserDeleg
         
         if self.posts.count == 1 {
             
+            
+            ClassDatosMAD.sharedDatosMAD.idMadReferencia = self.myTextField.text!
             self.myTextField.text = ""
             self.myActivityIndicator.stopAnimating()
+            
+            
+            
             
             
             let storyboard:UIStoryboard = UIStoryboard(name: "Mad", bundle: nil)

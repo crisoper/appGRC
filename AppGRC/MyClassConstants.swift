@@ -20,6 +20,7 @@ class MyClassConstants {
     let colorTwitter:UIColor
     let colorFacebook:UIColor
     let colorTextoBotones:UIColor
+    let colorLineSeparador:UIColor
     
     
     init() {
@@ -33,6 +34,7 @@ class MyClassConstants {
         self.colorTwitter = UIColor(red: 0/255, green: 176/255, blue: 228/255, alpha: 1)
         self.colorFacebook = UIColor(red: 12/255, green: 78/255, blue: 151/255, alpha: 1)
         self.colorTextoBotones = UIColor(red: 51/255, green: 51/255, blue: 51/255, alpha: 1)
+        self.colorLineSeparador = UIColor(red: 210/255, green: 210/255, blue: 210/255, alpha: 1)
     }
     
 }

@@ -82,6 +82,19 @@ class EmerrgenteMadVC: UIViewController, NSXMLParserDelegate {
         loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
         loadingIndicator.startAnimating();
         
+        
+        //let firstChildTabVC = self.storyboard?.instantiateViewControllerWithIdentifier("FirstViewControllerId")
+        //let storyboard:UIStoryboard = UIStoryboard(name: "Mad", bundle: nil)
+        //let popoverContent:EmerrgenteMadVC = (storyboard.instantiateViewControllerWithIdentifier("EmerrgenteMadVCID")) as! EmerrgenteMadVC
+        
+        //let nav = UINavigationController(rootViewController: popoverContent)
+        //nav.modalPresentationStyle = UIModalPresentationStyle.Popover
+        //self.presentViewController(nav, animated: true, completion: nil)
+        
+        
+        
+        //alert.view.addSubview(popoverContent)
+        
         alert.view.addSubview(loadingIndicator)
         presentViewController(alert, animated: true, completion: nil)
     }

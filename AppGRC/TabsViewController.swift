@@ -15,6 +15,7 @@ class TabsViewController: UIViewController {
     
     @IBOutlet weak var tabs: UISegmentedControl!
     @IBOutlet weak var viewContent: UIView!
+    @IBOutlet weak var lblSeparador: UILabel!
     
     //Para ver que tab se ha presionado
     enum TabIndex : Int {
@@ -48,11 +49,33 @@ class TabsViewController: UIViewController {
     
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //Set title
-        self.title = " Expediente 9000"
+        self.title = "Expediente \(ClassDatosMAD.sharedDatosMAD.idMadReferencia)"
+        
+        self.view.backgroundColor = myConstants.colorFondo2
+        //self.lblSeparador.layer.borderWidth = 1
+        self.lblSeparador.backgroundColor = myConstants.colorIconos
+//        self.lblSeparador.layer.borderColor = myConstants.colorIconos.CGColor
+//        self.lblSeparador.layer.borderWidth = 1
+        
+        
+        
+        
+        
+//        let border = CALayer()
+//        let width = CGFloat(2.0)
+//        border.borderColor = UIColor.redColor().CGColor
+//        border.frame = CGRect(x: 0, y: lblSeparador.frame.size.height - width, width:  lblSeparador.frame.size.width, height: lblSeparador.frame.size.height)
+//        
+//        border.borderWidth = width
+//        lblSeparador.layer.addSublayer(border)
+//        lblSeparador.layer.masksToBounds = true
+        
+        //self.lblSeparador.layer.addBorder(UIRectEdge.Top, color: UIColor.greenColor(), thickness: 1.0)
         
         //Cambiando el botón de regreso
         //self.navigationItem.hidesBackButton = true
@@ -179,3 +202,37 @@ class TabsViewController: UIViewController {
 
     
 }
+
+
+
+
+extension CALayer {
+    
+    func addBorder(edge: UIRectEdge, color: UIColor, thickness: CGFloat) {
+        
+        let border = CALayer()
+        
+        switch edge {
+        case UIRectEdge.Top:
+            border.frame = CGRectMake(0, 0, CGRectGetHeight(self.frame), thickness)
+            break
+        case UIRectEdge.Bottom:
+            border.frame = CGRectMake(0, CGRectGetHeight(self.frame) - thickness, UIScreen.mainScreen().bounds.width, thickness)
+            break
+        case UIRectEdge.Left:
+            border.frame = CGRectMake(0, 0, thickness, CGRectGetHeight(self.frame))
+            break
+        case UIRectEdge.Right:
+            border.frame = CGRectMake(CGRectGetWidth(self.frame) - thickness, 0, thickness, CGRectGetHeight(self.frame))
+            break
+        default:
+            break
+        }
+        
+        border.backgroundColor = color.CGColor;
+        
+        self.addSublayer(border)
+    }
+    
+}
+
