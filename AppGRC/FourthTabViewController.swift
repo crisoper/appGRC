@@ -139,7 +139,7 @@ class FourthTabViewController: UIViewController, NSXMLParserDelegate, UITableVie
         //            self.myTableRelacionado.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
         //        }
         
-        //print(posts.count)
+        //print(posts)
         self.myTableAdjunto.reloadData()
     }
     

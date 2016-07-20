@@ -45,7 +45,9 @@
 		7E44453F1D0765F700A0CDAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E44453D1D0765F700A0CDAF /* LaunchScreen.storyboard */; };
 		7E6357B31D0E306B00B2584D /* Loading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6357B21D0E306B00B2584D /* Loading.storyboard */; };
 		7E6357B51D0E30F900B2584D /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6357B41D0E30F900B2584D /* LoadingViewController.swift */; };
+		7E8C1EC11D3EF55E006EA558 /* SegArchivadoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8C1EC01D3EF55E006EA558 /* SegArchivadoVC.swift */; };
 		7E9193171D397EDB0053FC1A /* cellSeguimiento.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E9193161D397EDB0053FC1A /* cellSeguimiento.xib */; };
+		7E91931B1D3984970053FC1A /* cellSeguimientoTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E91931A1D3984970053FC1A /* cellSeguimientoTVCell.swift */; };
 		7E9706221D0BC3D000771343 /* Redes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E9706211D0BC3D000771343 /* Redes.storyboard */; };
 		7E9706251D0BC3E300771343 /* Correo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E9706241D0BC3E300771343 /* Correo.storyboard */; };
 		7E9706271D0BC47900771343 /* CorreoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9706261D0BC47900771343 /* CorreoViewController.swift */; };
@@ -111,7 +113,9 @@
 		7E4445401D0765F700A0CDAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E6357B21D0E306B00B2584D /* Loading.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Loading.storyboard; sourceTree = "<group>"; };
 		7E6357B41D0E30F900B2584D /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		7E8C1EC01D3EF55E006EA558 /* SegArchivadoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegArchivadoVC.swift; sourceTree = "<group>"; };
 		7E9193161D397EDB0053FC1A /* cellSeguimiento.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellSeguimiento.xib; sourceTree = "<group>"; };
+		7E91931A1D3984970053FC1A /* cellSeguimientoTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cellSeguimientoTVCell.swift; sourceTree = "<group>"; };
 		7E9706211D0BC3D000771343 /* Redes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Redes.storyboard; sourceTree = "<group>"; };
 		7E9706241D0BC3E300771343 /* Correo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Correo.storyboard; sourceTree = "<group>"; };
 		7E9706261D0BC47900771343 /* CorreoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorreoViewController.swift; sourceTree = "<group>"; };
@@ -210,6 +214,8 @@
 				7EB38DDB1D357E5C00990E98 /* AdjuntoUTVCell.swift */,
 				7EB38DDD1D35AD4700990E98 /* ExpandableUTVCell.swift */,
 				7E9193161D397EDB0053FC1A /* cellSeguimiento.xib */,
+				7E91931A1D3984970053FC1A /* cellSeguimientoTVCell.swift */,
+				7E8C1EC01D3EF55E006EA558 /* SegArchivadoVC.swift */,
 			);
 			name = Mad;
 			sourceTree = "<group>";
@@ -428,6 +434,7 @@
 				7E34E6CE1D0DE0CB005910C8 /* NoticiasTVC.swift in Sources */,
 				7ED9B4291D2F544F008039DF /* TabySegmentedControl.swift in Sources */,
 				7EB38DDA1D352FBD00990E98 /* SeguimientoUTVCell.swift in Sources */,
+				7E8C1EC11D3EF55E006EA558 /* SegArchivadoVC.swift in Sources */,
 				7E1A54971D0F7B6100DFF36A /* ResolucionesTVC.swift in Sources */,
 				7E1A54931D0F73C600DFF36A /* SectionNormatividad.swift in Sources */,
 				7EB38DDC1D357E5C00990E98 /* AdjuntoUTVCell.swift in Sources */,
@@ -439,6 +446,7 @@
 				7E34E6CC1D0DE027005910C8 /* NormatividadTVC.swift in Sources */,
 				7ED2B2A61D31EC98000CDAC6 /* ClassDatosMAD.swift in Sources */,
 				7E34E6B21D0DBBC6005910C8 /* MadViewController.swift in Sources */,
+				7E91931B1D3984970053FC1A /* cellSeguimientoTVCell.swift in Sources */,
 				7E2004D81D0C77EC00B7D756 /* TerminosUIViewController.swift in Sources */,
 				7E34E6BC1D0DD9B8005910C8 /* ConvocatoriasViewController.swift in Sources */,
 				7E08F97C1D08DBD400552191 /* LoginViewController.swift in Sources */,

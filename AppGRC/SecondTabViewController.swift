@@ -17,8 +17,6 @@ class SecondTabViewController: UIViewController, NSXMLParserDelegate, UITableVie
     //Outlets
     @IBOutlet weak var tableSEguimiento: UITableView!
     
-    //Tipos de operaciones
-    var tipoOperaciones: [String] = ["", "RECEPCIONADO", "DERIVADO", "ARCHIVADO", "ADJUNTO"]
 
     //Variables para parsear XML
     var parser = NSXMLParser()
@@ -116,35 +114,88 @@ class SecondTabViewController: UIViewController, NSXMLParserDelegate, UITableVie
             cell.lblExpediente.text = ""
         }
         
+        cell.btnInformacion.tintColor = myConstants.colorIconos
+        
         
         cell.tapActionA = { (cell) in
-            print(indexPath.row)
+            
+            var text1 = "{\"tipoexpe\":\"\(self.posts.objectAtIndex(indexPath.row).valueForKey("tipoexpe") as! NSString as String)\""
+            text1 = text1 + ",\"nrofila\":\"\(self.posts.count - indexPath.row)\""
+            text1 = text1 + ",\"expedienteid\":\"\(self.posts.objectAtIndex(indexPath.row).valueForKey("expedienteid") as! NSString as String)\""
+            text1 = text1 + ",\"estado\":\"\(self.posts.objectAtIndex(indexPath.row).valueForKey("estado") as! NSString as String)\""
+            text1 = text1 + ",\"fecha\":\"\(self.posts.objectAtIndex(indexPath.row).valueForKey("fecha") as! NSString as String)\""
+            text1 = text1 + ",\"forma\":\"\(self.posts.objectAtIndex(indexPath.row).valueForKey("forma") as! NSString as String)\""
+            text1 = text1 + ",\"dependencia\":\"\(self.posts.objectAtIndex(indexPath.row).valueForKey("dependencia") as! NSString as String)\""
+            text1 = text1 + ",\"dependenciafull\":\"\(self.posts.objectAtIndex(indexPath.row).valueForKey("dependenciafull") as! NSString as String)\""
+            text1 = text1 + ",\"oficinaorigen\":\"\(self.posts.objectAtIndex(indexPath.row).valueForKey("oficinaorigen") as! NSString as String)\""
+            text1 = text1 + ",\"oficinaorigensiglas\":\"\(self.posts.objectAtIndex(indexPath.row).valueForKey("oficinaorigensiglas") as! NSString as String)\""
+            text1 = text1 + ",\"usuarioorigen\":\"\(self.posts.objectAtIndex(indexPath.row).valueForKey("usuarioorigen") as! NSString as String)\""
+            text1 = text1 + ",\"usuarioorigenfull\":\"\(self.posts.objectAtIndex(indexPath.row).valueForKey("usuarioorigenfull") as! NSString as String)\""
+            text1 = text1 + ",\"operacion\":\"\(self.posts.objectAtIndex(indexPath.row).valueForKey("operacion") as! NSString as String)\""
+            text1 = text1 + ",\"dependenciadestino\":\"\(self.posts.objectAtIndex(indexPath.row).valueForKey("dependenciadestino") as! NSString as String)\""
+            text1 = text1 + ",\"dependenciadestinosiglas\":\"\(self.posts.objectAtIndex(indexPath.row).valueForKey("dependenciadestinosiglas") as! NSString as String)\""
+            text1 = text1 + ",\"oficinadestino\":\"\(self.posts.objectAtIndex(indexPath.row).valueForKey("oficinadestino") as! NSString as String)\""
+            text1 = text1 + ",\"oficinadestinosiglas\":\"\(self.posts.objectAtIndex(indexPath.row).valueForKey("oficinadestinosiglas") as! NSString as String)\""
+            text1 = text1 + ",\"usuariodestino\":\"\(self.posts.objectAtIndex(indexPath.row).valueForKey("usuariodestino") as! NSString as String)\""
+            text1 = text1 + ",\"usuariodestinofull\":\"\(self.posts.objectAtIndex(indexPath.row).valueForKey("usuariodestinofull") as! NSString as String)\""
+            text1 = text1 + ",\"destinoproveido\":\"\(self.posts.objectAtIndex(indexPath.row).valueForKey("destinoproveido") as! NSString as String)\""
+            text1 = text1 + ",\"tipooperacion\":\"\(self.posts.objectAtIndex(indexPath.row).valueForKey("tipooperacion") as! NSString as String)\"}"
+            
+            ClassDatosMAD.sharedDatosMAD.seguimiento = text1
+            
+            //Llamamos a la función que va mostrar el emergente
+            self.mostrarDetalleMovimientoSef(self.posts.objectAtIndex(indexPath.row).valueForKey("tipooperacion") as! NSString as String)
+            
+            
         }
         
-        
-        //cell.textLabel?.font = UIFont(name: "Arial", size: 15)
-        
-        //cell.textLabel?.text = self.posts.objectAtIndex(indexPath.row).valueForKey("fecha") as! NSString as String
         
         return cell
     }
     
+    //Abrir Emergente con el detalle del movimiento en el seguimiento
+    func mostrarDetalleMovimientoSef(numero:String) -> Void {
+        
+        switch numero {
+        case "1":   //Recepcionado
+            let storyboard:UIStoryboard = UIStoryboard(name: "Mad", bundle: nil)
+            let popoverContent:SegArchivadoVC = (storyboard.instantiateViewControllerWithIdentifier("SegArchivadoVCID")) as! SegArchivadoVC
+            let nav = UINavigationController(rootViewController: popoverContent)
+            nav.modalPresentationStyle = UIModalPresentationStyle.Popover
+            self.presentViewController(nav, animated: false, completion: nil)
+            
+        case "2":   //Derivado
+            print("2")
+            
+        case "3":   //Archivado
+            print("3")
+            
+        case "4":   //Adjunto
+            print("4")
+            
+        default:    //Ninguno --- Mostrar alert
+            print("default")
+        }
+        
+        
+        
+        
+        
+    }
     
     
+    
+    
+    //Empezamos a parsear el XML obtenido
     func beginParsing(contentString:NSData)
     {
         posts = []
         self.parser = NSXMLParser(data: contentString)
         self.parser.delegate = self
         self.parser.parse()
-        
-        //print(posts.count)
-        
         self.tableSEguimiento.reloadData()
         
     }
-    
-    
     
     //XMLParser Methods
     
