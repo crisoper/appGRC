@@ -150,7 +150,9 @@ class FirstTabViewController: UIViewController, UIPopoverPresentationControllerD
                 self.btnDetail.hidden = true
             }
             
-            self.lblFecha.text = post.objectForKey("fechaexpediente") as? String
+            let fechaoriginal = "\(post.objectForKey("fechaexpediente")!)"
+            self.lblFecha.text = String2DateFormat.String2DateFormatSpanish(fechaoriginal.substringToIndex(fechaoriginal.startIndex.advancedBy(10)))
+            
             self.lblCargo.text = post.objectForKey("cargo") as? String
             self.lblFolios.text = post.objectForKey("folios") as? String
             

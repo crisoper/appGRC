@@ -90,9 +90,13 @@ class SecondTabViewController: UIViewController, NSXMLParserDelegate, UITableVie
         cell.backgroundColor = myConstants.colorFondo2
         
         //Desabilitar seleccion de la fila
-        cell.selectionStyle = UITableViewCellSelectionStyle.None
+        cell.selectionStyle = UITableViewCellSelectionStyle.None        
         
-        cell.lblFecha.text = self.posts.objectAtIndex(indexPath.row).valueForKey("fecha") as! NSString as String
+        let fechaoriginal = "\(self.posts.objectAtIndex(indexPath.row).valueForKey("fecha") as! NSString as String)!)"
+        cell.lblFecha.text = String2DateFormat.String2DateFormatSpanish(fechaoriginal.substringToIndex(fechaoriginal.startIndex.advancedBy(10)))
+        
+        
+        
         cell.lblFecha.backgroundColor = myConstants.colorFondo2
         cell.lblExpediente.backgroundColor = myConstants.colorFondo2
         
@@ -153,25 +157,37 @@ class SecondTabViewController: UIViewController, NSXMLParserDelegate, UITableVie
         return cell
     }
     
-    //Abrir Emergente con el detalle del movimiento en el seguimiento
+    //Abrir Emergente con el detalle del movimiento, según tipo
     func mostrarDetalleMovimientoSef(numero:String) -> Void {
         
         switch numero {
         case "1":   //Recepcionado
+            let storyboard:UIStoryboard = UIStoryboard(name: "Mad", bundle: nil)
+            let popoverContent:SegRecepcionadoVC = (storyboard.instantiateViewControllerWithIdentifier("SegRecepcionadoVCID")) as! SegRecepcionadoVC
+            let nav = UINavigationController(rootViewController: popoverContent)
+            nav.modalPresentationStyle = UIModalPresentationStyle.Popover
+            self.presentViewController(nav, animated: false, completion: nil)
+            
+        case "2":   //Derivado
+            let storyboard:UIStoryboard = UIStoryboard(name: "Mad", bundle: nil)
+            let popoverContent:SegDerivadoVC = (storyboard.instantiateViewControllerWithIdentifier("SegDerivadoVCID")) as! SegDerivadoVC
+            let nav = UINavigationController(rootViewController: popoverContent)
+            nav.modalPresentationStyle = UIModalPresentationStyle.Popover
+            self.presentViewController(nav, animated: false, completion: nil)
+            
+        case "3":   //Archivado
             let storyboard:UIStoryboard = UIStoryboard(name: "Mad", bundle: nil)
             let popoverContent:SegArchivadoVC = (storyboard.instantiateViewControllerWithIdentifier("SegArchivadoVCID")) as! SegArchivadoVC
             let nav = UINavigationController(rootViewController: popoverContent)
             nav.modalPresentationStyle = UIModalPresentationStyle.Popover
             self.presentViewController(nav, animated: false, completion: nil)
             
-        case "2":   //Derivado
-            print("2")
-            
-        case "3":   //Archivado
-            print("3")
-            
         case "4":   //Adjunto
-            print("4")
+            let storyboard:UIStoryboard = UIStoryboard(name: "Mad", bundle: nil)
+            let popoverContent:SegAdjuntoVC = (storyboard.instantiateViewControllerWithIdentifier("SegAdjuntoVCID")) as! SegAdjuntoVC
+            let nav = UINavigationController(rootViewController: popoverContent)
+            nav.modalPresentationStyle = UIModalPresentationStyle.Popover
+            self.presentViewController(nav, animated: false, completion: nil)
             
         default:    //Ninguno --- Mostrar alert
             print("default")

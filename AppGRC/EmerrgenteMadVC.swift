@@ -82,19 +82,6 @@ class EmerrgenteMadVC: UIViewController, NSXMLParserDelegate {
         loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
         loadingIndicator.startAnimating();
         
-        
-        //let firstChildTabVC = self.storyboard?.instantiateViewControllerWithIdentifier("FirstViewControllerId")
-        //let storyboard:UIStoryboard = UIStoryboard(name: "Mad", bundle: nil)
-        //let popoverContent:EmerrgenteMadVC = (storyboard.instantiateViewControllerWithIdentifier("EmerrgenteMadVCID")) as! EmerrgenteMadVC
-        
-        //let nav = UINavigationController(rootViewController: popoverContent)
-        //nav.modalPresentationStyle = UIModalPresentationStyle.Popover
-        //self.presentViewController(nav, animated: true, completion: nil)
-        
-        
-        
-        //alert.view.addSubview(popoverContent)
-        
         alert.view.addSubview(loadingIndicator)
         presentViewController(alert, animated: true, completion: nil)
     }
@@ -182,7 +169,11 @@ class EmerrgenteMadVC: UIViewController, NSXMLParserDelegate {
                     self.lblReferencia.text = " - "
                 }
                 
-                self.lblFecha.text = post.objectForKey("fechaexpediente") as? String
+                //self.lblFecha.text = post.objectForKey("fechaexpediente") as? String
+                
+                let fechaoriginal = "\(post.objectForKey("fechaexpediente")!)"
+                self.lblFecha.text = String2DateFormat.String2DateFormatSpanish(fechaoriginal.substringToIndex(fechaoriginal.startIndex.advancedBy(10)))
+                
                 self.lblCargo.text = post.objectForKey("cargo") as? String
                 self.lblFolios.text = post.objectForKey("folios") as? String
                 

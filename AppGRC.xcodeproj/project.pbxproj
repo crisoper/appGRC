@@ -48,6 +48,10 @@
 		7E8C1EC11D3EF55E006EA558 /* SegArchivadoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8C1EC01D3EF55E006EA558 /* SegArchivadoVC.swift */; };
 		7E9193171D397EDB0053FC1A /* cellSeguimiento.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E9193161D397EDB0053FC1A /* cellSeguimiento.xib */; };
 		7E91931B1D3984970053FC1A /* cellSeguimientoTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E91931A1D3984970053FC1A /* cellSeguimientoTVCell.swift */; };
+		7E9641861D3FC49B002E318B /* SegDerivadoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9641851D3FC49B002E318B /* SegDerivadoVC.swift */; };
+		7E9641881D3FC4DC002E318B /* SegRecepcionadoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9641871D3FC4DC002E318B /* SegRecepcionadoVC.swift */; };
+		7E96418A1D3FC4FA002E318B /* SegAdjuntoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9641891D3FC4FA002E318B /* SegAdjuntoVC.swift */; };
+		7E96418C1D3FE5D1002E318B /* ClassFormatDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E96418B1D3FE5D1002E318B /* ClassFormatDate.swift */; };
 		7E9706221D0BC3D000771343 /* Redes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E9706211D0BC3D000771343 /* Redes.storyboard */; };
 		7E9706251D0BC3E300771343 /* Correo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E9706241D0BC3E300771343 /* Correo.storyboard */; };
 		7E9706271D0BC47900771343 /* CorreoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9706261D0BC47900771343 /* CorreoViewController.swift */; };
@@ -116,6 +120,10 @@
 		7E8C1EC01D3EF55E006EA558 /* SegArchivadoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegArchivadoVC.swift; sourceTree = "<group>"; };
 		7E9193161D397EDB0053FC1A /* cellSeguimiento.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellSeguimiento.xib; sourceTree = "<group>"; };
 		7E91931A1D3984970053FC1A /* cellSeguimientoTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cellSeguimientoTVCell.swift; sourceTree = "<group>"; };
+		7E9641851D3FC49B002E318B /* SegDerivadoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegDerivadoVC.swift; sourceTree = "<group>"; };
+		7E9641871D3FC4DC002E318B /* SegRecepcionadoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegRecepcionadoVC.swift; sourceTree = "<group>"; };
+		7E9641891D3FC4FA002E318B /* SegAdjuntoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegAdjuntoVC.swift; sourceTree = "<group>"; };
+		7E96418B1D3FE5D1002E318B /* ClassFormatDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassFormatDate.swift; sourceTree = "<group>"; };
 		7E9706211D0BC3D000771343 /* Redes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Redes.storyboard; sourceTree = "<group>"; };
 		7E9706241D0BC3E300771343 /* Correo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Correo.storyboard; sourceTree = "<group>"; };
 		7E9706261D0BC47900771343 /* CorreoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorreoViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +179,7 @@
 				7E6357B21D0E306B00B2584D /* Loading.storyboard */,
 				7E6357B41D0E30F900B2584D /* LoadingViewController.swift */,
 				7E9C058F1D1898E700D8C7BD /* VerificaConexion.swift */,
+				7E96418B1D3FE5D1002E318B /* ClassFormatDate.swift */,
 			);
 			name = Utiles;
 			sourceTree = "<group>";
@@ -216,6 +225,9 @@
 				7E9193161D397EDB0053FC1A /* cellSeguimiento.xib */,
 				7E91931A1D3984970053FC1A /* cellSeguimientoTVCell.swift */,
 				7E8C1EC01D3EF55E006EA558 /* SegArchivadoVC.swift */,
+				7E9641851D3FC49B002E318B /* SegDerivadoVC.swift */,
+				7E9641871D3FC4DC002E318B /* SegRecepcionadoVC.swift */,
+				7E9641891D3FC4FA002E318B /* SegAdjuntoVC.swift */,
 			);
 			name = Mad;
 			sourceTree = "<group>";
@@ -432,6 +444,7 @@
 			files = (
 				7E08F10E1D16F31C0053F840 /* NoticiaDetalleVC.swift in Sources */,
 				7E34E6CE1D0DE0CB005910C8 /* NoticiasTVC.swift in Sources */,
+				7E96418A1D3FC4FA002E318B /* SegAdjuntoVC.swift in Sources */,
 				7ED9B4291D2F544F008039DF /* TabySegmentedControl.swift in Sources */,
 				7EB38DDA1D352FBD00990E98 /* SeguimientoUTVCell.swift in Sources */,
 				7E8C1EC11D3EF55E006EA558 /* SegArchivadoVC.swift in Sources */,
@@ -442,6 +455,7 @@
 				7E1A40AC1D0B070000546B70 /* DataController.swift in Sources */,
 				7E2004D61D0C651300B7D756 /* AcecadeTableViewCell.swift in Sources */,
 				7E2004D41D0C633900B7D756 /* AcercadeTableViewController.swift in Sources */,
+				7E96418C1D3FE5D1002E318B /* ClassFormatDate.swift in Sources */,
 				7E34E6B51D0DD8C8005910C8 /* AgendaViewController.swift in Sources */,
 				7E34E6CC1D0DE027005910C8 /* NormatividadTVC.swift in Sources */,
 				7ED2B2A61D31EC98000CDAC6 /* ClassDatosMAD.swift in Sources */,
@@ -458,6 +472,7 @@
 				7ED2B2A41D319784000CDAC6 /* EmerrgenteMadVC.swift in Sources */,
 				7ED9B4271D2F4EEA008039DF /* SecondTabViewController.swift in Sources */,
 				7ED9B4251D2F4E44008039DF /* FirstTabViewController.swift in Sources */,
+				7E9641881D3FC4DC002E318B /* SegRecepcionadoVC.swift in Sources */,
 				7E9706271D0BC47900771343 /* CorreoViewController.swift in Sources */,
 				7E9C05901D1898E700D8C7BD /* VerificaConexion.swift in Sources */,
 				7E0BF0D81D0CB0C300693D27 /* RedesCollectionViewCell.swift in Sources */,
@@ -468,6 +483,7 @@
 				7E1FE5841D0E1A540034D11E /* PopupController.swift in Sources */,
 				7E08F9711D088EF000552191 /* MyClassConstants.swift in Sources */,
 				7EDEEFC61D2FDCA100ADB884 /* FourthTabViewController.swift in Sources */,
+				7E9641861D3FC49B002E318B /* SegDerivadoVC.swift in Sources */,
 				7E2004DA1D0C784300B7D756 /* DessarrolladoresUIVController.swift in Sources */,
 				7EB1CCD01D11B1C700FFA256 /* LoadfilesViewController.swift in Sources */,
 				7ED9B4231D2E8DF8008039DF /* TabsViewController.swift in Sources */,
