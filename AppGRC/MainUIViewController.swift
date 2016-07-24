@@ -347,8 +347,8 @@ class MainUIViewController: UIViewController, UICollectionViewDataSource, UIColl
             
             case "proyectos":
             
-                let storyboard:UIStoryboard = UIStoryboard(name: "Loadfiles", bundle: nil)
-                let controller:LoadfilesViewController  = storyboard.instantiateViewControllerWithIdentifier("LoadfilesVCID") as! LoadfilesViewController
+                let storyboard:UIStoryboard = UIStoryboard(name: "Proyectos", bundle: nil)
+                let controller:ProyectosTableVC  = storyboard.instantiateViewControllerWithIdentifier("ProyectosTableVCID") as! ProyectosTableVC
                 self.showViewController(controller, sender: self)
             
             

@@ -10,6 +10,9 @@ import UIKit
 
 class NoticiasTVC: UITableViewController, UISearchBarDelegate {
     
+    //Colores globales
+    let myConstants = MyClassConstants()
+    
     //Para guardar en caché
     var imageCache = [String:UIImage]()
     //var people: [Person] = []
@@ -33,6 +36,8 @@ class NoticiasTVC: UITableViewController, UISearchBarDelegate {
         
         self.title = "Noticias"
         self.searchBar.delegate = self
+        
+        self.view.backgroundColor = myConstants.colorFondo2
         
         //Para Ocultar el teclado automaticamente
 //        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(NoticiasTVC.ocultarTeclado))
@@ -270,7 +275,10 @@ class NoticiasTVC: UITableViewController, UISearchBarDelegate {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! NoticiasTVCell
+        
+        cell.backgroundColor = myConstants.colorFondo2
         
         cell.myTitle.text = self.resultNoticias[indexPath.row].titulo
         cell.myTitle.numberOfLines = 0

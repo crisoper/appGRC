@@ -45,6 +45,10 @@
 		7E44453F1D0765F700A0CDAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E44453D1D0765F700A0CDAF /* LaunchScreen.storyboard */; };
 		7E6357B31D0E306B00B2584D /* Loading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6357B21D0E306B00B2584D /* Loading.storyboard */; };
 		7E6357B51D0E30F900B2584D /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6357B41D0E30F900B2584D /* LoadingViewController.swift */; };
+		7E6BAB041D4403EC00C46A70 /* TabsProyectosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6BAB031D4403EC00C46A70 /* TabsProyectosVC.swift */; };
+		7E6BAB061D440C4C00C46A70 /* tabDatosProyectosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6BAB051D440C4C00C46A70 /* tabDatosProyectosVC.swift */; };
+		7E6BAB081D440C6900C46A70 /* tabDocumentosProyectosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6BAB071D440C6900C46A70 /* tabDocumentosProyectosVC.swift */; };
+		7E6BAB0A1D44332500C46A70 /* documentosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6BAB091D44332500C46A70 /* documentosTableViewCell.swift */; };
 		7E8C1EC11D3EF55E006EA558 /* SegArchivadoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8C1EC01D3EF55E006EA558 /* SegArchivadoVC.swift */; };
 		7E9193171D397EDB0053FC1A /* cellSeguimiento.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E9193161D397EDB0053FC1A /* cellSeguimiento.xib */; };
 		7E91931B1D3984970053FC1A /* cellSeguimientoTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E91931A1D3984970053FC1A /* cellSeguimientoTVCell.swift */; };
@@ -56,11 +60,14 @@
 		7E9706251D0BC3E300771343 /* Correo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E9706241D0BC3E300771343 /* Correo.storyboard */; };
 		7E9706271D0BC47900771343 /* CorreoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9706261D0BC47900771343 /* CorreoViewController.swift */; };
 		7E9C05901D1898E700D8C7BD /* VerificaConexion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9C058F1D1898E700D8C7BD /* VerificaConexion.swift */; };
+		7EB030AE1D43A99C00C3756B /* ProyectosTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB030AD1D43A99C00C3756B /* ProyectosTVCell.swift */; };
 		7EB1CCCE1D11B15100FFA256 /* Loadfiles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB1CCCD1D11B15100FFA256 /* Loadfiles.storyboard */; };
 		7EB1CCD01D11B1C700FFA256 /* LoadfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB1CCCF1D11B1C700FFA256 /* LoadfilesViewController.swift */; };
 		7EB38DDA1D352FBD00990E98 /* SeguimientoUTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB38DD91D352FBD00990E98 /* SeguimientoUTVCell.swift */; };
 		7EB38DDC1D357E5C00990E98 /* AdjuntoUTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB38DDB1D357E5C00990E98 /* AdjuntoUTVCell.swift */; };
 		7EB38DDE1D35AD4700990E98 /* ExpandableUTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB38DDD1D35AD4700990E98 /* ExpandableUTVCell.swift */; };
+		7EB756F91D41B6AF0008CB8B /* Proyectos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB756F81D41B6AF0008CB8B /* Proyectos.storyboard */; };
+		7EB756FB1D41B9640008CB8B /* ProyectosTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB756FA1D41B9640008CB8B /* ProyectosTableVC.swift */; };
 		7EC4C11E1D15BB080025DB0D /* Noticias.css in Resources */ = {isa = PBXBuildFile; fileRef = 7EC4C11D1D15BB080025DB0D /* Noticias.css */; };
 		7EC4C1201D15C13C0025DB0D /* NoticiaClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC4C11F1D15C13C0025DB0D /* NoticiaClass.swift */; };
 		7EC4C1241D15C21D0025DB0D /* NoticiasTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC4C1231D15C21D0025DB0D /* NoticiasTVCell.swift */; };
@@ -117,6 +124,10 @@
 		7E4445401D0765F700A0CDAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E6357B21D0E306B00B2584D /* Loading.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Loading.storyboard; sourceTree = "<group>"; };
 		7E6357B41D0E30F900B2584D /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		7E6BAB031D4403EC00C46A70 /* TabsProyectosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabsProyectosVC.swift; path = Proyectos/TabsProyectosVC.swift; sourceTree = "<group>"; };
+		7E6BAB051D440C4C00C46A70 /* tabDatosProyectosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tabDatosProyectosVC.swift; path = Proyectos/tabDatosProyectosVC.swift; sourceTree = "<group>"; };
+		7E6BAB071D440C6900C46A70 /* tabDocumentosProyectosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tabDocumentosProyectosVC.swift; path = Proyectos/tabDocumentosProyectosVC.swift; sourceTree = "<group>"; };
+		7E6BAB091D44332500C46A70 /* documentosTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = documentosTableViewCell.swift; path = Proyectos/documentosTableViewCell.swift; sourceTree = "<group>"; };
 		7E8C1EC01D3EF55E006EA558 /* SegArchivadoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegArchivadoVC.swift; sourceTree = "<group>"; };
 		7E9193161D397EDB0053FC1A /* cellSeguimiento.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellSeguimiento.xib; sourceTree = "<group>"; };
 		7E91931A1D3984970053FC1A /* cellSeguimientoTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cellSeguimientoTVCell.swift; sourceTree = "<group>"; };
@@ -128,11 +139,14 @@
 		7E9706241D0BC3E300771343 /* Correo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Correo.storyboard; sourceTree = "<group>"; };
 		7E9706261D0BC47900771343 /* CorreoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorreoViewController.swift; sourceTree = "<group>"; };
 		7E9C058F1D1898E700D8C7BD /* VerificaConexion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificaConexion.swift; sourceTree = "<group>"; };
+		7EB030AD1D43A99C00C3756B /* ProyectosTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProyectosTVCell.swift; path = Proyectos/ProyectosTVCell.swift; sourceTree = "<group>"; };
 		7EB1CCCD1D11B15100FFA256 /* Loadfiles.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Loadfiles.storyboard; sourceTree = "<group>"; };
 		7EB1CCCF1D11B1C700FFA256 /* LoadfilesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadfilesViewController.swift; sourceTree = "<group>"; };
 		7EB38DD91D352FBD00990E98 /* SeguimientoUTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeguimientoUTVCell.swift; sourceTree = "<group>"; };
 		7EB38DDB1D357E5C00990E98 /* AdjuntoUTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdjuntoUTVCell.swift; sourceTree = "<group>"; };
 		7EB38DDD1D35AD4700990E98 /* ExpandableUTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableUTVCell.swift; sourceTree = "<group>"; };
+		7EB756F81D41B6AF0008CB8B /* Proyectos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Proyectos.storyboard; path = Proyectos/Proyectos.storyboard; sourceTree = "<group>"; };
+		7EB756FA1D41B9640008CB8B /* ProyectosTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProyectosTableVC.swift; path = Proyectos/ProyectosTableVC.swift; sourceTree = "<group>"; };
 		7EC4C11D1D15BB080025DB0D /* Noticias.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = Noticias.css; sourceTree = "<group>"; };
 		7EC4C11F1D15C13C0025DB0D /* NoticiaClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticiaClass.swift; sourceTree = "<group>"; };
 		7EC4C1231D15C21D0025DB0D /* NoticiasTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticiasTVCell.swift; sourceTree = "<group>"; };
@@ -312,6 +326,7 @@
 				7E08F96C1D088CF000552191 /* Main */,
 				7E34E6C21D0DDBD6005910C8 /* Normatividad */,
 				7E34E6BD1D0DDA3A005910C8 /* Noticias */,
+				7EB756F71D41B65B0008CB8B /* Proyectos */,
 				7E9706201D0BC37900771343 /* Redes */,
 				7E08F96F1D088ED600552191 /* Utiles */,
 			);
@@ -344,6 +359,20 @@
 				7EB1CCCF1D11B1C700FFA256 /* LoadfilesViewController.swift */,
 			);
 			name = LoadFiles;
+			sourceTree = "<group>";
+		};
+		7EB756F71D41B65B0008CB8B /* Proyectos */ = {
+			isa = PBXGroup;
+			children = (
+				7EB756F81D41B6AF0008CB8B /* Proyectos.storyboard */,
+				7EB756FA1D41B9640008CB8B /* ProyectosTableVC.swift */,
+				7EB030AD1D43A99C00C3756B /* ProyectosTVCell.swift */,
+				7E6BAB031D4403EC00C46A70 /* TabsProyectosVC.swift */,
+				7E6BAB051D440C4C00C46A70 /* tabDatosProyectosVC.swift */,
+				7E6BAB071D440C6900C46A70 /* tabDocumentosProyectosVC.swift */,
+				7E6BAB091D44332500C46A70 /* documentosTableViewCell.swift */,
+			);
+			name = Proyectos;
 			sourceTree = "<group>";
 		};
 		7EC4C11C1D15BABE0025DB0D /* css */ = {
@@ -420,6 +449,7 @@
 				7EB1CCCE1D11B15100FFA256 /* Loadfiles.storyboard in Resources */,
 				7E9706221D0BC3D000771343 /* Redes.storyboard in Resources */,
 				7E0BF0D41D0C90A600693D27 /* Datas.xcassets in Resources */,
+				7EB756F91D41B6AF0008CB8B /* Proyectos.storyboard in Resources */,
 				7E9706251D0BC3E300771343 /* Correo.storyboard in Resources */,
 				7E2004D21D0C60BA00B7D756 /* Acercade.storyboard in Resources */,
 				7E6357B31D0E306B00B2584D /* Loading.storyboard in Resources */,
@@ -451,6 +481,8 @@
 				7E1A54971D0F7B6100DFF36A /* ResolucionesTVC.swift in Sources */,
 				7E1A54931D0F73C600DFF36A /* SectionNormatividad.swift in Sources */,
 				7EB38DDC1D357E5C00990E98 /* AdjuntoUTVCell.swift in Sources */,
+				7E6BAB081D440C6900C46A70 /* tabDocumentosProyectosVC.swift in Sources */,
+				7E6BAB041D4403EC00C46A70 /* TabsProyectosVC.swift in Sources */,
 				7EB38DDE1D35AD4700990E98 /* ExpandableUTVCell.swift in Sources */,
 				7E1A40AC1D0B070000546B70 /* DataController.swift in Sources */,
 				7E2004D61D0C651300B7D756 /* AcecadeTableViewCell.swift in Sources */,
@@ -458,7 +490,9 @@
 				7E96418C1D3FE5D1002E318B /* ClassFormatDate.swift in Sources */,
 				7E34E6B51D0DD8C8005910C8 /* AgendaViewController.swift in Sources */,
 				7E34E6CC1D0DE027005910C8 /* NormatividadTVC.swift in Sources */,
+				7EB030AE1D43A99C00C3756B /* ProyectosTVCell.swift in Sources */,
 				7ED2B2A61D31EC98000CDAC6 /* ClassDatosMAD.swift in Sources */,
+				7EB756FB1D41B9640008CB8B /* ProyectosTableVC.swift in Sources */,
 				7E34E6B21D0DBBC6005910C8 /* MadViewController.swift in Sources */,
 				7E91931B1D3984970053FC1A /* cellSeguimientoTVCell.swift in Sources */,
 				7E2004D81D0C77EC00B7D756 /* TerminosUIViewController.swift in Sources */,
@@ -466,6 +500,7 @@
 				7E08F97C1D08DBD400552191 /* LoginViewController.swift in Sources */,
 				7E08F96E1D088E3900552191 /* MainUIViewController.swift in Sources */,
 				7E4445321D0765F700A0CDAF /* AppDelegate.swift in Sources */,
+				7E6BAB0A1D44332500C46A70 /* documentosTableViewCell.swift in Sources */,
 				7EC4C1201D15C13C0025DB0D /* NoticiaClass.swift in Sources */,
 				7EC4C1261D15C5DC0025DB0D /* NoticiasImageCache.swift in Sources */,
 				7EC4C1241D15C21D0025DB0D /* NoticiasTVCell.swift in Sources */,
@@ -478,6 +513,7 @@
 				7E0BF0D81D0CB0C300693D27 /* RedesCollectionViewCell.swift in Sources */,
 				7EDEEFC41D2FDC7400ADB884 /* ThirdTabViewController.swift in Sources */,
 				7E0BF0D61D0CA9EC00693D27 /* RedesViewController.swift in Sources */,
+				7E6BAB061D440C4C00C46A70 /* tabDatosProyectosVC.swift in Sources */,
 				7E08F9731D088FAA00552191 /* MainCollectionViewCell.swift in Sources */,
 				7E1A54951D0F742600DFF36A /* SectionNormatividadData.swift in Sources */,
 				7E1FE5841D0E1A540034D11E /* PopupController.swift in Sources */,

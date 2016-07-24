@@ -379,10 +379,7 @@ class MadViewController: UIViewController, UITextFieldDelegate, NSXMLParserDeleg
             self.myTextField.text = ""
             self.myActivityIndicator.stopAnimating()
             
-            
-            
-            
-            
+            //Navegamos
             let storyboard:UIStoryboard = UIStoryboard(name: "Mad", bundle: nil)
             let controlador:TabsViewController  = storyboard.instantiateViewControllerWithIdentifier("SeguimientoMadID") as! TabsViewController
             self.showViewController(controlador, sender: self)

@@ -59,29 +59,6 @@ class TabsViewController: UIViewController {
         self.view.backgroundColor = myConstants.colorFondo2
         //self.lblSeparador.layer.borderWidth = 1
         self.lblSeparador.backgroundColor = myConstants.colorIconos
-//        self.lblSeparador.layer.borderColor = myConstants.colorIconos.CGColor
-//        self.lblSeparador.layer.borderWidth = 1
-        
-        
-        
-        
-        
-//        let border = CALayer()
-//        let width = CGFloat(2.0)
-//        border.borderColor = UIColor.redColor().CGColor
-//        border.frame = CGRect(x: 0, y: lblSeparador.frame.size.height - width, width:  lblSeparador.frame.size.width, height: lblSeparador.frame.size.height)
-//        
-//        border.borderWidth = width
-//        lblSeparador.layer.addSublayer(border)
-//        lblSeparador.layer.masksToBounds = true
-        
-        //self.lblSeparador.layer.addBorder(UIRectEdge.Top, color: UIColor.greenColor(), thickness: 1.0)
-        
-        //Cambiando el botón de regreso
-        //self.navigationItem.hidesBackButton = true
-        //let imageButtonBack =  UIImage(named: "izquierda")
-        //let customBackItem = UIBarButtonItem(image: imageButtonBack, style: UIBarButtonItemStyle.Plain, target: self, action: #selector(TabsViewController.botonRegresar(_:)))
-        //self.navigationItem.leftBarButtonItem = customBackItem
         
         
         //Cambiando la fuente de los tabs
@@ -125,7 +102,7 @@ class TabsViewController: UIViewController {
     }
     
     
-    
+    //Mostrar tab actual
     func displayCurrentTab(tabIndex: Int){
         if let vc = viewControllerForSelectedSegmentIndex(tabIndex) {
             
@@ -138,7 +115,7 @@ class TabsViewController: UIViewController {
         }
     }
     
-    
+    //Establecer el UIViewController según tab seleccionado
     func viewControllerForSelectedSegmentIndex(index: Int) -> UIViewController? {
         var vc: UIViewController?
         switch index {
